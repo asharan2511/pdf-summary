@@ -1,9 +1,20 @@
-import { Button } from "@/components/ui/button";
+import HeroSection from "@/components/home/HeroSection";
+
+import WorkSection from "@/components/home/WorkSection";
 
 export default function Home() {
   return (
-    <div>
-      <Button>Click me</Button>
+    <div className="relative w-full">
+      <div
+        className="
+      flex flex-col"
+      >
+        <HeroSection />
+      </div>
+
+      <WorkSection />
+
+      {/* <CTASection/> */}
     </div>
   );
 }
